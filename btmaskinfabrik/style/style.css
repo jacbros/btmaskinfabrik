@@ -33,11 +33,10 @@ ul{
 h1, h2, h3, h4, h5, h6, h7, h8, h9 {
     font-family: "Changa", sans-serif;
     text-transform: uppercase;
-    color:#0d6996;
+    color:#033b56;
 }
 
 h1 {
-    color:#033b56;
     text-align: center;
 }
 
@@ -54,10 +53,10 @@ p{
 h1 {
     font-family: "Changa"
 }
-
 .shadow {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
+
 
 /*
  NAVIGATIONSBAR...........................
@@ -105,11 +104,9 @@ h1 {
 
     z-index: 1;
 
-    transform-origin: 4px 0px;
-
-    
+    transform-origin: 4px 0px;   
 }
-
+ 
 
 /* 
  LAVER BURGERBAR TIL ET KRYDS
@@ -140,7 +137,7 @@ h1 {
     font-family: "Changa", sans-serif;
     font-size:2em;
     margin-left: 6%;
-    padding-left: 5%;
+    padding-left:5%;
     text-transform: uppercase;
 }
 #menu li ul li{
@@ -167,16 +164,12 @@ h1 {
 .menucontainer .fa-bars:checked ~ #menu {
     transform: none;
 }
-header #menu .currentpage{
+.currentpage{
     border-left: solid 10px #ec830a;
-    padding-left: calc(5% - 10px);
 
 }
 .sub{
     display:none;
-}
-.callaction{
-    width:42.6%;
 }
 
 /* content */
@@ -226,151 +219,100 @@ video{
     margin: 5% 0 10% 10%;
 
 }
-
 .intro img{
     margin-right:2%;
     width:40%;
     height:40%;
 }
 
-/* UNDERSIDER */
+/* Knapper */
+.callaction{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width:100%;
+}
+.callaction li{
+    width:40%;
+    margin: 0 3% 5% 0;
+}
+.callaction li img{
+    width:100%;
+}
+.callaction li a{
+    background-color: #033b56;
+    width:100%;
+    line-height: 0;
+    display: block;
+}
+.callaction li a span{
+    line-height:1.85;
+    padding-left:5%;
+    border-left:5px solid #ec830a;
+}
+
+/* 'SÅDAN FUNGERER DET' DELEN */
+
+.process{
+    display:flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    padding:5% 0;
+    background-color:#FFF;
+}
+.process div h2{
+    text-align: center;
+    margin-right:10%;
+    margin-bottom:10%;
+    font-size:0.9em;
+    line-height: 1.3;
+}
+.process div p{
+    font-size:1em;
+    margin-left:15%;
+}
+.process div:nth-child(1){
+    position:relative;
+    width:100%;
+}
+.pil{
+    position:absolute;
+    bottom:-120%;
+    left:10%;
+    width:80%;
+}
+.flexikoner{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    width:100%;
+}
+.flexikoner div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 6%;
+    margin-left:2%;
+}
+.ikoner{
+    stroke: #000;
+    flex-direction: column;
+    width:18%;
+    height:auto;
+}
+
+/* 'Vi gar givet en hjælpende hånd til' delen */
+
+
+
+/* UNDERSIDER - Artikler */
 
 .undersideintrop {
     text-align: center;
     width: 260px;
     margin: 0 auto;
-}
-.row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 2.5% 0;
-    
-  padding: 0 5%;
-}
-
-.hover-shadow {
-    width: 100%;
-    padding: 2.5%;
-    
-}
-
-.row:after {
-  clear: both;
-}
-
-/* Create four equal columns that floats next to eachother */
-.column {
-    width: 50%;
-
-}
-
-/* The Modal (background) */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: black;
-}
-
-/* Modal Content */
-.modal-content {
-  position: relative;
-  margin: auto;
-  padding: 0;
-  width: 90%;
-  max-width: 1200px;
-  margin-top: 25%
-}
-
-/* The Close Button */
-.close {
-  color: white;
-  position: absolute;
-  top: 10px;
-  right: 25px;
-  font-size: 35px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #999;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* Hide the slides by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: black;
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-/* Caption text */
-.caption-container {
-  text-align: center;
-  background-color: black;
-  padding: 2% 10%;
- 
-}
-#caption {
-    color: white;
-}
-
-
-img.demo {
-  display: none;
-}
-
-.hover-shadow:hover {
-  opacity: 0.8;
-}
-
-/* LISTE UNDERSIDER */
-
-.liste {
-    margin: 20px 10px;
-    padding: 5px 15px;
-    background-color: #FFF;
-}
-
-.liste ul li {
-    margin-bottom: 10px;
 }
 
 /*FOOTER*/
@@ -409,3 +351,4 @@ footer h3 {
 }
 
 /* MEDIA QUERIES */
+

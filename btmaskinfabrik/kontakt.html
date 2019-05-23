@@ -9,6 +9,8 @@
     <link rel="stylesheet" type="text/css" href="style/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Changa:600|Roboto&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/jquery3.2.1/dist/jquery.min.js"></script>
+    <script src="js/contact.js"></script>
 </head>
 
 <body>
@@ -52,11 +54,20 @@
             </div>
         </nav>
     </header>
-    
     <main>
-        
+        <form action="https://formspree.io/jacbros1@gmail.com" method="POST">
+            <label for="name">Navn</label>
+            <input type="text" id="name" name="Navn">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="E-Mail">
+            <label for="subject">Emnet</label>
+            <input type="text" id="subject" name="Emne">
+            <label for="message">Besked</label>
+            <textarea id="message" name="Beskeden"></textarea>
+            <label></label>
+            <input type="submit" value="Send">
+        </form>
     </main>
-    
     <footer>
         <div>
             <div class="footer-left">
