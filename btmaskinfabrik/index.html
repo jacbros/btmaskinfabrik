@@ -1,76 +1,114 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>BT's Maskinfabrik - Drejning og Fræsning</title>
-	<link rel="stylesheet" type="text/css" href="style/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Changa:600|Roboto&display=swap" rel="stylesheet">
+    <title>BT's Maskinfabrik - Drejning og Fræsning</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BT's Maskinfabrik">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Changa:600|Roboto&display=swap" rel="stylesheet">
 </head>
+
 <body>
-<header>
-	
-<nav role="navigation">
-        <div id="menuToggle">
-           
-            <!-- LOGO
+    <header>
+        <nav role="navigation">
+            <div id="menuToggle">
+                <!-- LOGO
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-            <a href="index.html"><img src="images/bt-logo.svg"></a>
-            
-            <!-- USYNLIG CHECKBOX TIL BURGERMENU
+                <div class="menucontainer">
+                	<a href="index.html"><img src="images/bt-logo.svg" alt="logo"></a>
+                <!-- USYNLIG CHECKBOX TIL BURGERMENU
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-            <input type="checkbox" />
+                
+                <i onclick="menuToggle()" class="fas fa-3x fa-bars"></i>
+            	</div>
+                <ul id="menu" class="menuinactive">
+                    <li class="currentpage	">
+                        <a href="index.html">Forside</a>
+                    </li>
+                    <li>
+                        <button class="accordion">Kompetencer</button>
+                        <ul class="sub">
+                            <li><a href="drejning.html">Drejning</a></li>
+                            <li><a href="fraesning.html">Fræsning</a></li>
+                            <li><a href="maskinliste.html">Maskinliste</a></li>
+                            <li><a href="materialeliste.html">Materialeliste</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="referencer.html">Referencer</a>
+                    </li>
+                    <li>
+                        <button class="accordion">Om os</button>
+                        <ul class="sub">
+                            <li><a href="historie.html">Virksomhedens historie</a></li>
+                            <li><a href="">Teamet</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+    	<div class="videocontainer">
+	        <video playsinline autoplay loop id="video">
+	            <source src="video/btvideo.mp4" type="video/mp4">
+	        </video>
+	        <div class="tekstvideo">
+	            <h1></h1>
+	        </div>
+        </div>
+        <section class="intro">
+        	<div>
+        		<h2>Brian Thomsen</h2>
+	            <p>"Hos BT's Maskinfabrik tilbyder vi CNC-bearbejdede emner med speciale i drejning og fræsning.<br><br>Hvis I står med et problem rykker vi med glæde ud"</p>
+	            <a href="kontakt.html">Kontakt os</a>
+            </div>
+            <img src="images/brian.png" alt="Billede af Brian Thomsen">
+        </section>
+        <ul class="callaction">
+            <li id="calldrejning"><a href="drejning.html"><span>Drejning</span></a></li>
+            <li id="callfraesning"><a href=""><span>Fræsning</span></a></li>
+            <li id="callmaskinliste"><a href="maskinliste.html"><span>Maskinliste</span></a></li>
+            <li id="materialeliste"><a href="materialeliste.html"><span>Materialeliste</span></a></li>
+        </ul>
+        
+		
 
-            <span></span>
-            <span></span>
-            <span></span>
-
-
-            <ul id="menu">
-               <li>
-               <a href="index.html">Forside</a>
-                </li>
+    </main>
+    <footer>
+    	<div>
+        <div class="footer-left">
+        	<img src="images/bt-logo.svg" alt="footer logo">
+            <ul>
                 <li>
-                <a href="#">Kompetencer</a>
+                    <h3 class="overskrifter">Kompetencer</h3>
                 </li>
-                	<li>
-                		<ul>
-                			<li><a href="">Drejning</a></li>
-                			<li><a href="">Fræsning</a></li>
-                			<li><a href="">Maskinliste</a></li>
-                			<li><a href="">Materialeliste</a></li>
-                		</ul>
-                	</li>
-                <li>
-                <a href="#">Referancer</a>
-                </li>
-                <li>
-                <a href="#">Om os</a>
-                </li>
-                <li>
-                	<ul>
-                		<li><a href="">Virksomhedens historie</a></li>
-                		<li><a href="">Teamet</a></li>
-                	</ul>
-                </li>
-                <li>
-                <a href="#">Kontakt</a>
-                </li>
-
+                <li>Drejning</li>
+                <li>Fræsning</li>
+                <li>Maskinliste</li>
+                <li>Materialeliste</li>
             </ul>
         </div>
-</nav>
-</header>
-<main>
-	<section></section>
-	<ul class="callaction">
-		<li id="calldrejning"><a href=""></a></li>
-		<li id="callfraesning"><a href=""></a></li>
-		<li id="callmaskinliste"><a href=""></a></li>
-		<li id="materialeliste"><a href=""></a></li>
-	</ul>
-</main>
-<footer>
-	
-</footer>
+            <div class="footer-right">
+            	<h3 class="overskrifter">Kontakt</h3>
+            	<p>BT's Maskinfabrik<br>
+            		CVR 2582 7104<br>
+            		Kertemindevej 5<br>
+            		8940, Randers SV<br>
+            		TLF: 4040 4377<br>
+            		Mail: bt@btmaskinfabrik.dk</p>
+            </div>
+            <p></p>
+        </div>
+        </div>
+    </footer>
+    <script src="js/mitjs.js"></script>
 </body>
+
 </html>
