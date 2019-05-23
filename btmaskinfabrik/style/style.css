@@ -33,10 +33,11 @@ ul{
 h1, h2, h3, h4, h5, h6, h7, h8, h9 {
     font-family: "Changa", sans-serif;
     text-transform: uppercase;
-    color:#033b56;
+    color:#0d6996;
 }
 
 h1 {
+    color:#033b56;
     text-align: center;
 }
 
@@ -52,6 +53,10 @@ p{
 
 h1 {
     font-family: "Changa"
+}
+
+.shadow {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 /*
@@ -135,7 +140,7 @@ h1 {
     font-family: "Changa", sans-serif;
     font-size:2em;
     margin-left: 6%;
-    padding-left:5%;
+    padding-left: 5%;
     text-transform: uppercase;
 }
 #menu li ul li{
@@ -162,8 +167,9 @@ h1 {
 .menucontainer .fa-bars:checked ~ #menu {
     transform: none;
 }
-.currentpage{
+header #menu .currentpage{
     border-left: solid 10px #ec830a;
+    padding-left: calc(5% - 10px);
 
 }
 .sub{
@@ -220,6 +226,7 @@ video{
     margin: 5% 0 10% 10%;
 
 }
+
 .intro img{
     margin-right:2%;
     width:40%;
@@ -233,7 +240,6 @@ video{
     width: 260px;
     margin: 0 auto;
 }
-
 .row {
     display: flex;
     flex-direction: row;
@@ -355,6 +361,17 @@ img.demo {
   opacity: 0.8;
 }
 
+/* LISTE UNDERSIDER */
+
+.liste {
+    margin: 20px 10px;
+    padding: 5px 15px;
+    background-color: #FFF;
+}
+
+.liste ul li {
+    margin-bottom: 10px;
+}
 
 /*FOOTER*/
 
