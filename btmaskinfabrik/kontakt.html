@@ -9,6 +9,18 @@
     <link rel="stylesheet" type="text/css" href="style/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Changa:600|Roboto&display=swap" rel="stylesheet">
+    <!-- Kontakt formens koder -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery3.2.1/dist/jquery.min.js"></script>
+    <script src="js/contact.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140785470-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-140785470-1');
+    </script>
 </head>
 
 <body>
@@ -42,21 +54,31 @@
                         <button class="accordion">Om os</button>
                         <ul class="sub">
                             <li><a href="historie.html">Virksomhedens historie</a></li>
-                            <li><a href="">Teamet</a></li>
+                            <li><a href="teamet.html">Teamet</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#">Kontakt</a>
+                        <a href="kontakt.html">Kontakt</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
-    
     <main>
-        
+        <form action="https://formspree.io/jacbros1@gmail.com" method="POST">
+            <label for="name">Navn</label>
+            <input type="text" id="name" name="Navn">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="E-Mail">
+            <label for="subject">Emnet</label>
+            <input type="text" id="subject" name="Emne">
+            <label for="message">Besked</label>
+            <textarea id="message" name="Beskeden"></textarea>
+            <label></label>
+            <input type="submit" value="Send">
+        </form>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2205.7526168246845!2d10.031807015856936!3d56.43756238074203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c1cbb5b6a8e01%3A0xff2886a5e41ad306!2sKertemindevej+5%2C+8940+Randers!5e0!3m2!1sen!2sdk!4v1558685851962!5m2!1sen!2sdk" width="90%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
     </main>
-    
     <footer>
         <div>
             <div class="footer-left">

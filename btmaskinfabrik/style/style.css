@@ -281,11 +281,7 @@ video{
     background-color:#FFF;
 }
 .process div h2{
-    text-align: center;
-    margin-right:10%;
-    margin-bottom:10%;
-    font-size:0.9em;
-    line-height: 1.3;
+    display:none;
 }
 .process div p{
     font-size:1em;
@@ -296,18 +292,20 @@ video{
     width:100%;
 }
 .pil{
-    position:absolute;
-    bottom:-120%;
-    left:10%;
     width:80%;
+    margin-left:10%;
+}
+.deskpile{
+    display:none;
 }
 .flexikoner{
     display:flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     width:100%;
 }
-.flexikoner div{
+.ikon{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -529,6 +527,110 @@ footer h3 {
 
 /* MEDIA QUERIES */
 
+/* Tablet portræt */
+
+@media all and (min-width: 767px){
+/* HEADER */
+
+
+/* FORSIDE */
+
+
+/* SÅDAN FUNGERER DET */
+
+.pil{
+    display:none;
+}
+.deskpile{
+    display:flex;
+    justify-content: center;
+    width:25%;
+}
+.deskpile img{
+    margin: 0 auto;
+}
+.process{
+    flex-direction: column;
+}
+.process div h2{
+    display:block;
+    text-align: center;
+    margin-bottom:5%;
+    font-size:2em;
+}
+.flexikoner{
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 5%;
+}
+.flexikoner div{
+    flex-direction: column;
+    justify-content: center;
+    margin:0;
+}
+.flexikoner div:nth-child(1){
+    width:initial;
+}
+.flexikoner div img{
+    width:40%;
+}
+.flexikoner div p{
+    margin:0;
+    margin-top:5%;
+    font-size:1.2em;
+}
+
+/* 'Hjælpende hånd til' delen */
+.firmaercontainer h2{
+    font-size:2em;
+    margin:5% 0 0 0;
+}
+.firmaer{
+    margin-bottom:5%;
+}
+.firmaer div{
+    width:22.5%;
+    margin-top:5%;
+}
+.firmaer div img{
+    width:70%;
+    display:block;
+    margin:0 auto;
+}
+.firmaer div:nth-child(1) img{
+    width:50%;
+}
+.firmaer div:nth-child(4) img{
+    width:50%;
+}
+
+/* FOOTER */
+
+footer div{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.footer-left{
+    flex-direction: row;
+    margin:0;
+}
+.footer-left img{
+    width:50%;
+}
+.footer-right{
+    flex-direction: column;
+    margin:0;
+}
+.copyright{
+    display:flex;
+    justify-content: center;
+    background-color: #0d6996;
+}
+
+/**/
+}
+
 /* tablet landscape og frem */
 
 @media all and (min-width: 1023px) {
@@ -544,22 +646,52 @@ footer h3 {
 i{
     display:none;
 }
+
+
+
+/* FOOTER */
+
+
+
+/*FORSIDE*/
+
+.videocontainer{
+    width:100%;
+    height:80vh;
+    overflow:hidden;
+}
 .videocontainer h1{
     font-size:3em;
 }
 .videocontainer video{
     object-fit: cover;
+    width:100%;
 }
-.videocontainer video source{
-    width:90%;
+/*introtekst*/
+.intro div{
+    width:70%;
+}
+.intro img{
+    width:25%;
+    height:25%;
+    margin-right:10%;
+    margin-left:13%;
+    margin-top:5%;
+    margin-bottom:5%;
+}
+.intro div h2{
+    font-size: 4em;
+}
+.intro div p{
+    font-size:1.5em;
+}
+.intro div a{
+    font-size:2em;
 }
 
+/* call to action buttons */
 
-/* FOOTER */
-
-/*FORSIDE*/
-
-
+.callaction
 
 /*REFERENCER*/
 
