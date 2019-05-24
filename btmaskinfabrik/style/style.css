@@ -33,7 +33,7 @@ ul{
 h1, h2, h3, h4, h5, h6, h7, h8, h9 {
     font-family: "Changa", sans-serif;
     text-transform: uppercase;
-    color:#0d6996;
+    color:#033b56;
 }
 
 h1 {
@@ -60,6 +60,7 @@ h1 {
 img{
     width:100%;
 }
+
 
 /*
  NAVIGATIONSBAR...........................
@@ -448,7 +449,7 @@ video{
   width: auto;
   padding: 16px;
   margin-top: -50px;
-  color: black;
+  color: #000;
   font-weight: bold;
   font-size: 20px;
   transition: 0.6s ease;
@@ -533,6 +534,7 @@ footer h3 {
 
 @media all and (min-width: 1023px) {
 
+
 /* HEADER */
 
 #menuToggle div a img{
@@ -558,7 +560,6 @@ i{
 /* FOOTER */
 
 /*FORSIDE*/
-
 
 
 /*REFERENCER*/
