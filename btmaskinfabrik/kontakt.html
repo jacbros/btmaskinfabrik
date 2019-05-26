@@ -2,15 +2,15 @@
 <html lang="da">
 
 <head>
-    <title>Kontakt - BT's Maskinfabrik</title>
+    <title>BT's Maskinfabrik - Drejning og Fræsning</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Har du brug for hjælp? Så skriv til BT's Maskinfabrik og hør hvad vi kan gøre for dig.">
+    <meta name="description" content="BT's Maskinfabrik">
     <link rel="stylesheet" type="text/css" href="style/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Changa:600|Roboto&display=swap" rel="stylesheet">
     <!-- Kontakt formens koder -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery3.2.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
     <script src="js/contact.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140785470-1"></script>
@@ -18,7 +18,6 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'UA-140785470-1');
     </script>
 </head>
@@ -65,44 +64,88 @@
         </nav>
     </header>
     <main>
-        <form action="https://formspree.io/jacbros1@gmail.com" method="POST">
-            <label for="name">Navn</label>
-            <input type="text" id="name" name="Navn">
-            <label for="email">E-mail</label>
-            <input type="email" id="email" name="E-Mail">
-            <label for="subject">Emnet</label>
-            <input type="text" id="subject" name="Emne">
-            <label for="message">Besked</label>
-            <textarea id="message" name="Beskeden"></textarea>
-            <label></label>
-            <input type="submit" value="Send">
-        </form>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2205.7526168246845!2d10.031807015856936!3d56.43756238074203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c1cbb5b6a8e01%3A0xff2886a5e41ad306!2sKertemindevej+5%2C+8940+Randers!5e0!3m2!1sen!2sdk!4v1558685851962!5m2!1sen!2sdk" width="90%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+       <section class="kontaktcontainer">
+        
+         <div class=kontaktintro>
+          <h1>KONTAKT</h1>
+            <p class="undersideintrop">Udfyld formularen for at modtage et uforpligtende tilbud.</p>
+            </div>
+            <section class="kontakt">
+            <form action="https://formspree.io/jacbros1@gmail.com" method="POST">
+                <div class="kontakt-top">
+                    <div class="navn">
+                        <label for="name">Navn</label>
+                        <input type="text" id="name" name="Navn">
+                    </div>
+                    <div class="telefon">
+                       <label for="phone">Telefonnummer</label>
+                    <input type="text" id="phone" name="Telefonnummer">
+                        
+                    </div>
+                </div>
+                <div class="mail">
+                    <label for="email">E-mail</label>
+                        <input type="email" id="email" name="E-Mail">
+                </div>
+                <div class="emne">
+                    <label for="subject">Emnet</label>
+                    <input type="text" id="subject" name="Emne">
+                </div>
+                <div class="besked">
+                    <label for="message">Besked</label>
+                    <textarea id="message" name="Beskeden"></textarea>
+                    <label></label>
+                </div>
+                
+                <div class="send">
+                    <input id="send" type="submit" value="Send">
+                </div>
+            </form>
+        </section>
+        <section class="kontaktbox">
+           <div class="kontaktinfo">
+            <h1>Kontaktinformation</h1>
+            <p>bt@btmaskinfabrik.dk</p>
+            
+            <p>40 40 43 77</p>
+            </div>
+            <div class="kontaktinfo">
+            <h1>Adresse</h1>
+            <p>Kertemindevej 5 8940, Randers SV</p>
+            </div>
+        </section>
+        <section class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2205.7526168246845!2d10.031807015856936!3d56.43756238074203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c1cbb5b6a8e01%3A0xff2886a5e41ad306!2sKertemindevej+5%2C+8940+Randers!5e0!3m2!1sen!2sdk!4v1558685851962!5m2!1sen!2sdk" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </section>
+        </section>
     </main>
     <footer>
-        <div>
-            <div class="footer-left">
-                <img src="images/bt-logo.svg" alt="footer logo">
-                <ul>
-                    <li>
-                        <h3 class="overskrifter">Kompetencer</h3>
-                    </li>
-                    <li><a href="drejning.html">Drejning</a></li>
-                    <li><a href="fraesning.html">Fræsning</a></li>
-                    <li><a href="maskinliste.html">Maskinliste</a></li>
-                    <li><a href="materialeliste.html">Materialeliste</a></li>
-                </ul>
+        <div id="footerContainer">
+            <div><img src="images/bt-logo.svg" alt="footer logo"></div>
+            <div id="footerInfoContainer">
+                <div>
+                    <h3 class="overskrifter">Kompetencer</h3>
+                    <ul>
+                        <li><a href="drejning.html">Drejning</a></li>
+                        <li><a href="fraesning.html">Fræsning</a></li>
+                        <li><a href="maskiner.html">Maskinliste</a></li>
+                        <li><a href="materialer.html">Materialeliste</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Kontakt</h3>
+                    <p>BT's Maskinfabrik<br>
+                        CVR 2582 7104<br>
+                        Kertemindevej 5<br>
+                        8940, Randers SV<br>
+                        TLF: 4040 4377<br>
+                        Mail: bt@btmaskinfabrik.dk
+                    </p>
+                </div>
             </div>
-            <div class="footer-right">
-                <h3 class="overskrifter">Kontakt</h3>
-                <p>BT's Maskinfabrik<br>
-                    CVR 2582 7104<br>
-                    Kertemindevej 5<br>
-                    8940, Randers SV<br>
-                    TLF: 4040 4377<br>
-                    Mail: bt@btmaskinfabrik.dk</p>
-            </div>
-            <p></p>
+        </div>
+        <div id="copyrightContainer">
+            <p id="copyright">&copy; 2019 BT's Maskinfabrik</p>
         </div>
     </footer>
     <script src="js/mitjs.js"></script>
