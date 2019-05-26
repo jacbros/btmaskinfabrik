@@ -3,6 +3,7 @@ $(document).ready(function (){
 		console.log('Clicked button')
 
 		var name = $('.name').val()
+		var phone = $('.phone').val()
 		var email = $('.email').val()
 		var subject = $('.subject').val()
 		var message = $('.message').val()
@@ -14,6 +15,13 @@ $(document).ready(function (){
 		} else {
 		event.preventDefault()
 		statusElm.append('<div>Angiv venligst et navn</div>')
+		}
+
+		if(phone.length >= 8){
+		statusElm.append('<div>Dit telefonnummer er godkendt</div>')
+		} else {
+		event.preventDefault()
+		statusElm.append('<div>Angiv venligst et telefonnummer</div>')
 		}
 
 		if(email.length > 5 && email.includes('@') && email.includes('.')){

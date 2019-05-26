@@ -74,13 +74,16 @@ img {
 }
 
 article {
-    max-width: 700px;
+    max-width: 700px
 }
 
 article p {
     margin-bottom: 20px;
 }
-
+.listlink{
+    color:#0d6996;
+    font-family: "Changa", sans-serif;
+}
 
 /*
  NAVIGATIONSBAR...........................
@@ -406,11 +409,14 @@ video {
     width: 90%;
     margin: 0 auto;
 }
+.artikelcontainer{
+    padding: 5px 10px;
+}
 
 /* LISTE UNDERSIDER */
 
 .liste {
-    margin: 20px 10px;
+    margin: 20px auto;
     padding: 5px 15px;
     background-color: #FFF;
     max-width: 425px;
@@ -419,7 +425,10 @@ video {
 .liste ul li {
     margin-bottom: 10px;
 }
-
+.listecontainer{
+    padding: 5px 10px;
+    margin:0 auto;
+}
 
 
 /* UNDERSIDER - REFERENCER */
@@ -653,6 +662,9 @@ img.demo {
     width: 110px;
     color: white;
     border-left: 5px solid #ec830a;
+    border-right: none;
+    border-bottom: none; 
+    border-top: none;
     height: 30px;
     font-size: 17px;
     text-align: left;
@@ -872,16 +884,29 @@ footer img {
         display:flex;
         justify-content: center;
         flex-direction: column;
+        margin:0 auto;
     }
     .artikeloverskrifter {
         text-align: left;
     }
+    .artikeloverskrifter:nth-child(1){
+        margin-top:30px;
+        line-height: 1;
+    }
     .artikelcontainer p {
-        
+        margin-top:10px;
     }
     .artikelcontainer img {
         
     }
+    .referenceoverskrifter{
+        text-align: center;
+    }
+    /* Referencer */
+
+     .modal-content{
+        margin-top:4%;
+     }
 
     /* FOOTER */
 
@@ -953,7 +978,7 @@ footer img {
     header #menu .currentpage {
         border-left: none;
         border-bottom: solid 7px #ec830a;
-        padding-left: 20px;
+        padding: 0 20px;
         /* Same as above, but to overwrite currentpage mobile */
     }
 
