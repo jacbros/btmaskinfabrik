@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="da">
 
 <head>
     <title>BT’s Maskinfabrik - CNC drejning og fræsning</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="BT’s Maskinfabrik i Randers tilbyder CNC drejning og fræsning af emner i alle slags metaller og plast. Præcision og kvalitet, også når det haster. Kontakt os, så kigger vi på det!">
+    <meta name="description" content="BT’s Maskinfabrik i Randers tilbyder CNC drejning og fræsning af emner i alle slags metaller og plast. Præcision og kvalitet, også når det haster.">
     <link rel="stylesheet" type="text/css" href="style/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     
@@ -24,7 +24,7 @@
 
 <body>
     <header>
-        <nav role="navigation">
+        <nav>
             <div id="menuToggle">
                 <!-- LOGO
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -77,11 +77,11 @@
                 <p>"Hos BT's Maskinfabrik tilbyder vi CNC-bearbejdede emner med speciale i drejning og fræsning.<br><br>Hvis I står med et problem rykker vi med glæde ud"</p>
                 <a class="overskrifter shadow" href="kontakt.html">Kontakt os</a>
             </div>
-            <img src="images/brian.png" alt="Billede af Brian Thomsen">
+            <div class="imgdiv"><img src="images/brian.png" alt="Billede af Brian Thomsen"></div>
         </section>
         <ul class="callaction">
-            <li id="calldrejning">
-                <a class="overskrifter shadow" href="drejning.html"><img src="images/drejning.jpg" alt="Drejning"><span>Drejning</span></a>
+            <li id="calldrejning" class="overskrifter shadow">
+                <a href="drejning.html"><img src="images/drejning.jpg" alt="Drejning"><span>Drejning</span></a>
             </li>
             <li class="overskrifter shadow" id="callfraesning">
                 <a href="fraesning.html"><img src="images/fraesning.jpg" alt="Fraesning"><span>Fræsning</span></a>
@@ -137,16 +137,16 @@
             <h2 class="overskrifter">Vi har givet en hjælpende hånd til:</h2>
             <div class="firmaer">
                 <div>
-                    <img src="images/rpc.png">
+                    <img src="images/rpc.png" alt="RPC Superfos">
                 </div>
                 <div>
-                    <img src="images/rockwool.png">
+                    <img src="images/rockwool.png" alt="Rockwool">
                 </div>
                 <div>
-                    <img src="images/randerspipe.png">
+                    <img src="images/randerspipe.png" alt="Randers Rørindustri">
                 </div>
                 <div>
-                    <img src="images/ravendo.png">
+                    <img src="images/ravendo.png" alt="Ravendo Randersbøren">
                 </div>
             </div>
         </section>
@@ -177,7 +177,7 @@
             </div>
         </div>
         <div id="copyrightContainer">
-            <p id="copyright">&copy; 2019 BT's Maskinfabrik</p>
+            <p id="copyright">&copy; <span id="currentyear"></span> BT's Maskinfabrik</p>
         </div>
     </footer>
     <script src="js/mitjs.js"></script>

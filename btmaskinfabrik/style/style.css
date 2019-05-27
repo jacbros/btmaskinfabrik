@@ -84,10 +84,19 @@ article p {
     color:#0d6996;
     font-family: "Changa", sans-serif;
 }
-
+main{
+    min-height: calc(100vh - 171px - 100px);
+}
+iframe{
+    width:100%;
+    height:100%;
+}
 /*
  NAVIGATIONSBAR...........................
  */
+header{
+
+}
 #menuToggle {
     background-color: #033b56;
     display: block;
@@ -242,13 +251,28 @@ video {
 
 .intro {
     display: flex;
+    max-height: 250px;
+    max-width: 500px;
+    margin: 0 auto 10px auto;
 }
 
 .intro div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 52%;
+    width: 50%;
+}
+
+.intro .imgdiv {
+    display: flex;
+    padding-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro img {
+    height: 100%;
+    width: auto;
 }
 
 .intro div h2 {
@@ -277,12 +301,6 @@ video {
     max-width: 80%;
     margin: 5% 0 10% 10%;
 
-}
-
-.intro img {
-    margin-right: 2%;
-    width: 40%;
-    height: 40%;
 }
 
 /* Knapper */
@@ -400,7 +418,21 @@ video {
     width: 100%;
     height: 100%;
 }
+.firmaer div:nth-child(1){
+    display:flex;
+    justify-content: center;
+}
+.firmaer div:nth-child(4){
+    display:flex;
+    justify-content: center;
+}
+.firmaer div:nth-child(1) img {
+    width: 50%;
+}
 
+.firmaer div:nth-child(4) img {
+    width: 50%;
+}
 
 /* UNDERSIDER - Artikler */
 
@@ -477,8 +509,8 @@ video {
     margin: auto;
     padding: 0;
     width: 90%;
-    max-width: 850px;
-    margin-top: 15%;
+    margin-top: 5%;
+
 }
 
 /* The Close Button */
@@ -489,6 +521,7 @@ video {
     right: 25px;
     font-size: 35px;
     font-weight: bold;
+    z-index:1;
 }
 
 .close:hover,
@@ -500,7 +533,15 @@ video {
 
 /* Hide the slides by default */
 .mySlides {
-    display: none;
+    display:none; 
+    justify-content: center;
+    max-height: 70vh;
+    width:auto;
+    margin: 0 auto;
+}
+.mySlides img{
+    max-height: 70vh;
+    width:auto;
 }
 
 /* Next & previous buttons */
@@ -512,7 +553,7 @@ video {
     width: auto;
     padding: 16px;
     margin-top: -50px;
-    color: black;
+    color: #fff;
     font-weight: bold;
     font-size: 20px;
     transition: 0.6s ease;
@@ -530,7 +571,7 @@ video {
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(100, 100, 100, 1);
 }
 
 /* Caption text */
@@ -760,10 +801,19 @@ footer img {
 @media all and (min-width: 767px) {
     /* HEADER */
 
-    #menuToggle div a img {
-        width: 60%;
+    #menuToggle{
+        height: 100px;
     }
-
+    #menuToggle div a{
+        width:200px;
+    }
+    #menuToggle div a img {
+        height: 70px;
+        width: 100%;
+    }
+    #menuToggle .fa-bars{
+        margin-top:30px;
+    }
     /* FORSIDE */
 
     /* VIDEO */
@@ -773,28 +823,17 @@ footer img {
     }
 
 
-    /* call to action */
+    /* Intro */
 
-    .intro div {
-        width: ;
+    .intro {
+        font-size: 1.25em;
+        min-height: 275px;
     }
-
+    
     .intro div h2 {
-        font-size: 2.5em;
+        font-size: 1.40em;
     }
 
-    .intro div p {
-        font-size: 1.5em;
-
-    }
-
-    .intro div a {
-        font-size: 1.7em;
-    }
-
-    .callaction li a span {
-        font-size: 1.3em;
-    }
 
     /* SÅDAN FUNGERER DET */
 
@@ -917,7 +956,9 @@ footer img {
     #footerContainer > div {
         width: 50%;
     }
-
+    #copyrightContainer p{
+        font-size:0.7em;
+    }
 }
 
 /* tablet landscape og frem */
@@ -1036,37 +1077,12 @@ footer img {
         width: 100%;
     }
 
-    /*introtekst*/
-    .intro div {
-        width: 90%;
+     /*introtekst*/
+    .intro {
+        max-height: 450px;
+        max-width: 900px;
+        font-size: 1.8em; 
     }
-
-    .intro img {
-        width: 25%;
-        height: 25%;
-        margin-right: 10%;
-        margin-left: 13%;
-        margin-top: 5%;
-        margin-bottom: 5%;
-    }
-
-    .intro div h2 {
-        font-size: 4em;
-        margin-left:5%;
-        widows: 90%;
-    }
-
-    .intro div p {
-        font-size: 1.5em;
-        margin-left:5%;
-    }
-
-    .intro div a {
-        font-size: 2em;
-        margin-left:5%;
-        max-width:89%;
-    }
-    
     /* call to action buttons */
 
     .callaction li a span {

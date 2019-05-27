@@ -20,7 +20,9 @@ function menuToggle() {
 }
 
 
-//Hovedprogramdel
 
+//Hovedprogramdel
+var time = new Date();
+document.getElementById("currentyear").innerHTML = time.getFullYear();
 
 
